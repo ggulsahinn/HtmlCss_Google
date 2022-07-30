@@ -1,10 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .header {
   list-style-type: none;
-  margin: 10px;
   overflow: hidden;
   margin-right: 16px;
   font-family: arial,sans-serif;
   font-size: 13px;
+  align-items: center;
+  display:flex; 
+  flex-direction: row-reverse;
 }
 
 .headerli a {
@@ -28,17 +35,18 @@
   background: #fff;
   display: flex;
   border: 1px solid #dfe1e5;
-  box-shadow: none;
+  border-radius: 100px;
+  box-shadow: 1px 1px 5px rgb(181, 181, 181) ;
   z-index: 3;
-  height: 44px;
+  height: 42px;
   margin: 0 auto;
   margin-top: -77px;
   width: 582px;
 }
 
-.search-area:hover {
+/* .search-area:hover {
 box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
-}
+} */
 
 .search {
   flex: 1;
@@ -78,19 +86,20 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   font: 16px arial, sans-serif;
   line-height: 34px;
   height: 34px !important;
-  display: block;
 }
 
 .input {
   margin: 0;
   padding: 0;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0);
+  border: none;
   word-wrap: break-word;
   outline: none;
   display: flex;
   flex: 100%;
   margin-top: -68px;
   font: 16px arial, sans-serif;
+  font-weight: 500;
   line-height: 34px;
   height: 34px !important;
   text-rendering: auto;
@@ -102,6 +111,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
+  width: 100%;
 }
 
 .googlesearch {
@@ -124,11 +134,8 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 }
 
 .footer {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #dfe1e5;
-  border-top: 1px solid #dadce0;
+  display:flex; 
+  flex-direction: row-reverse;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -136,8 +143,14 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   line-height: 10px;
 }
 
-.footerli {
-  float: left;
+.footer button {
+  background-color: white;
+  border: 1px solid #dfe1e5;
+  border-radius: 100px;
+  box-shadow: 1px 1px 5px rgb(181, 181, 181);
+  width: 180px;
+  height: 30px;
+  margin: 10px;
 }
 
 .footerli a {
@@ -154,4 +167,40 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 
 .footerli a:hover {
   text-decoration: underline;
+}
+
+li{
+  float: left;
+  margin: 20px 10px;
+}
+
+.voiceimg{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 5px;
+}
+
+.circle{
+  position: relative;;
+  background:#f4f4f4;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+
+.circle i{
+  position: relative;
+  height: 25px;
+  padding: 17px;
+}
+
+.btn{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  margin: auto;
 }
