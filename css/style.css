@@ -73,6 +73,13 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   position: relative;
 }
 
+.voiceimg{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 5px;
+}
+
 .input-enter {
   display: flex;
   flex: 1;
@@ -172,13 +179,6 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 li{
   float: left;
   margin: 20px 10px;
-}
-
-.voiceimg{
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  padding: 5px;
 }
 
 .circle{
